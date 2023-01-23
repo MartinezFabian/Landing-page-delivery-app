@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,5 +26,40 @@
         >
       </nav>
     </header>
+
+    <section class="form form__container">
+      <div class="form__grid">
+        <div class="form__content">
+          <h2>Encuentra y Pide comida de tu restaurante favorito</h2>
+          <form class="form__search">
+            <div class="form__field">
+              <label for="restaurant" class="form__label">Restaurant</label>
+              <input
+                class="form__input"
+                type="text"
+                id="restaurant"
+                placeholder="Nombre del restaurant"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label for="menu" class="form__label">Menu:</label>
+              <input
+                class="form__input"
+                type="text"
+                id="menu"
+                placeholder="Pizza, hamburguesa, etc"
+                required
+              />
+            </div>
+            <input class="form__submit" type="submit" value="Buscar" />
+          </form>
+        </div>
+
+        <div class="form__image">
+          <img src="build/img/dibujo_repartidor.svg" alt="imagen repartidor" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
