@@ -372,3 +372,68 @@ h3 {
 .bg-primary {
   background-color: #e8505b;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  width: 30rem;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    width: auto;
+  }
+}
+.nav__link {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+.nav__link--register {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.nav__link--register:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .nav__link--register {
+    width: auto;
+  }
+}
