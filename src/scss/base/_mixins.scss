@@ -1,0 +1,43 @@
+@use "variables" as v;
+
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin button($color, $text) {
+  background-color: $color;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: $text;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($color, 10);
+  }
+
+  @include tablet {
+    width: auto;
+  }
+}
+
+@mixin grid($columns, $gap) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat($columns, 1fr);
+}
