@@ -510,3 +510,39 @@ h3 {
     margin-top: 0;
   }
 }
+
+.steps {
+  margin-top: 5rem;
+}
+.steps__content {
+  background-color: #e8505b;
+  margin-top: -1px;
+  padding-bottom: 5rem;
+}
+.steps__heading {
+  text-align: center;
+  color: #ffffff;
+}
+.steps__heading--span {
+  display: block;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .steps__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.steps__image {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+.steps__image:hover {
+  -webkit-transform: rotate(-4deg) scale(1.1);
+          transform: rotate(-4deg) scale(1.1);
+}
