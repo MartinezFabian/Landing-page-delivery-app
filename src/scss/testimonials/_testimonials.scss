@@ -1,0 +1,12 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.testimonials {
+  padding: 5rem 0;
+
+  &__grid {
+    @include m.desktop {
+      @include m.grid(5, 2rem);
+    }
+  }
+}
