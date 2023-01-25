@@ -940,5 +940,38 @@
         </div>
       </div>
     </section>
+
+    <section class="download">
+      <div class="download__grid download__container">
+        <div class="download__image">
+          <picture>
+            <source srcset="build/img/app.avif" type="image/avif" />
+            <source srcset="build/img/app.webp" type="image/webp" />
+            <source srcset="build/img/app.png" type="image/png" />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="build/img/app.png"
+              alt="imagen app"
+              width="500"
+              height="300"
+            />
+          </picture>
+        </div>
+
+        <div class="stores">
+          <h3 class="stores__heading">Descarga la App</h3>
+          <p class="stores_text">Disponible para Android e iOS</p>
+          <div class="stores_grid">
+            <a href="#" class="stores__link">
+              <img src="build/img/tienda-apple.svg" alt="tienda apple" />
+            </a>
+            <a href="#" class="stores__link">
+              <img src="build/img/tienda-android.svg" alt="tienda android" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
