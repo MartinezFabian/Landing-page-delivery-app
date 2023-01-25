@@ -756,3 +756,57 @@ h3 {
     width: auto;
   }
 }
+
+.download {
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .download__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.download__image {
+  width: 50%;
+  margin: 0 auto;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.download__image:hover {
+  -webkit-transform: rotate(4deg) scale(1.1);
+          transform: rotate(4deg) scale(1.1);
+}
+
+.stores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stores__heading {
+  color: #455a64;
+  margin: 4rem 0 0 0;
+}
+.stores__text {
+  text-align: center;
+}
+.stores__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.stores__link {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.stores__link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

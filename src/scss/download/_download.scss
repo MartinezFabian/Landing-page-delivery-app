@@ -1,0 +1,26 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.download {
+  background-color: v.$light-gray;
+  padding: 5rem 0;
+
+  &__grid {
+    @include m.tablet {
+      @include m.grid(2, 5rem);
+    }
+  }
+
+  &__image {
+    width: 50%;
+    margin: 0 auto;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      transform: rotate(4deg) scale(1.1);
+    }
+  }
+}

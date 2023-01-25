@@ -1,0 +1,30 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.stores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    color: v.$secondary-color;
+    margin: 4rem 0 0 0;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__grid {
+    @include m.grid(2, 2rem);
+  }
+
+  &__link {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
