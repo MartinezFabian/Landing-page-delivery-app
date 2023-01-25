@@ -699,3 +699,60 @@ h3 {
     text-align: left;
   }
 }
+
+.deliverymen {
+  padding: 5rem 0;
+}
+.deliverymen__heading {
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .deliverymen__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+.deliverymen__img {
+  margin: 0 auto;
+  width: 100%;
+}
+.deliverymen__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.deliverymen__text {
+  line-height: 1.5;
+  color: #455a64;
+}
+@media (min-width: 1024px) {
+  .deliverymen__text {
+    margin-top: 0;
+  }
+}
+.deliverymen__link {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.deliverymen__link:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .deliverymen__link {
+    width: auto;
+  }
+}

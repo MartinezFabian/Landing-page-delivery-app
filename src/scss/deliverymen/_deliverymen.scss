@@ -1,0 +1,42 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.deliverymen {
+  padding: 5rem 0;
+
+  &__heading {
+    color: v.$secondary-color;
+  }
+
+  &__grid {
+    @include m.tablet {
+      @include m.grid(2, 2rem);
+      align-items: center;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  &__text {
+    line-height: 1.5;
+    color: v.$secondary-color;
+
+    @include m.desktop {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    @include m.button(v.$primary-color, v.$white);
+  }
+}
